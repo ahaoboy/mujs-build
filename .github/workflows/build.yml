@@ -138,12 +138,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - name: test api
-        run: |
-          curl https://api.github.com/repos/ahaoboy/mujs-build/releases/latest
-          sleep 20
-          curl https://api.github.com/repos/ahaoboy/mujs-build/releases/latest
-      - uses: easy-install/easy-setup@v1.3.0
+      # - name: test api
+      #   run: |
+      #     curl https://api.github.com/repos/ahaoboy/mujs-build/releases/latest
+      #     sleep 20
+      #     curl https://api.github.com/repos/ahaoboy/mujs-build/releases/latest
+      - uses: easy-install/easy-setup@v1.3.1
         with:
           url: https://github.com/ahaoboy/mujs-build
           version: latest
