@@ -145,7 +145,10 @@ jobs:
           curl https://api.github.com/repos/ahaoboy/mujs-build/releases/latest
       - uses: ahaoboy/easy-setup@v1
         with:
-          repo: https://github.com/ahaoboy/mujs-build
+          url: https://github.com/ahaoboy/mujs-build
+          version: latest
+          name: mujs
+
       - name: test
         run: |
           which mujs
