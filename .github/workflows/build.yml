@@ -143,7 +143,7 @@ jobs:
           curl https://api.github.com/repos/ahaoboy/mujs-build/releases/latest
           sleep 20
           curl https://api.github.com/repos/ahaoboy/mujs-build/releases/latest
-      - uses: ahaoboy/easy-setup@v1
+      - uses: easy-install/easy-setup@v1.3.0
         with:
           url: https://github.com/ahaoboy/mujs-build
           version: latest
