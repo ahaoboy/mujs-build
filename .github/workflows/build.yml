@@ -9,6 +9,8 @@ on:
       - "v*"
     branches:
       - "main"
+  schedule:
+    - cron: "0 0 * * *"
   pull_request:
 
 env:
