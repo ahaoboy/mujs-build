@@ -102,8 +102,8 @@ jobs:
         run: |
           cd mujs
 
-          curl -fsSL -o UnicodeData.txt https://www.unicode.org/Public/16.0.0/ucd/UnicodeData.txt
-          curl -fsSL -o SpecialCasing.txt https://www.unicode.org/Public/16.0.0/ucd/SpecialCasing.txt
+          curl -fsSL -o UnicodeData.txt https://github.com/ahaoboy/unicode-build/releases/download/nightly/UnicodeData.txt
+          curl -fsSL -o SpecialCasing.txt https://github.com/ahaoboy/unicode-build/releases/download/nightly/SpecialCasing.txt
 
           make release HAVE_READLINE=no
           tar -cJf ./mujs-x86_64-pc-windows-gnu.tar.xz -C ./build/release .
